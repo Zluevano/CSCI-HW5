@@ -50,30 +50,9 @@ int main() {
     output = 1;
     cout << output << endl;
 
-
-  
   cout << endl;
   if (output <= 0)
     cout << "One " << endl;
   else
   cout << output << endl;
   }
-/*
-  for (int i = 0; i <= 10; i++) {
-    cin >> input;
-
-    output = input % 42;
-
-    cout << output;
-    cout << endl;
-  }
-}
-
-
-Apologize please disregard the prior email, I had just decided it best to complete it before I went to sleep as to not have any discourse from asking so late.
-
-With Regards,
-
-Zachary Luevano
-*/
-
