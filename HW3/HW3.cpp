@@ -16,23 +16,43 @@ double K1 = 13.12; //First conversion Factor
 double K2 = 11.37; //Second Conversion Factor
 double K3 = 0.3965; // Third Conversion Factor
 
-cout << "Enter Measured Temp" << endl;
+cout << "Enter Temp" << endl;
 cin >> Ta;
-cout << "Enter Measured Wind Speed" << endl;
+cout << "Enter Wind Speed" << endl;
 cin >> Ws;
 
-for (int i = 0; i < 3; i++){
-cout << "Temp = " << Ta << endl;
-cout << "Wind Speed = " << Ws << endl;
+  
+for (int i = 0; i < 3; i++)
+{
 WCI = ((K1 + 0.6125 * Ta) - (K2 * pow(Ws, 0.16) + (K3 * Ta * pow(Ws, 0.16))));
 Ta = Ta + 4;
-cout << WCI << endl;
+  cout << "Temp = " << Ta << " Wind = " << Ws << " WCI = " << WCI << endl;
+  cout << endl;
 
- /*
-for (int j = 0; j < 4; j++){
-cout << Ws << endl;
+  
+  }
+  }
+/*
+for (int j = i; j < 4; j++) 
 Ws = Ws +2;
+
+
 }
+  }
+
+
 //*/
-  }
-  }
+
+
+/*
+cout << "Temp: " << "Wind Speed: " << "WCI:"<< endl;
+cout << setw(2) << Ta;
+cout << setw(10) << Ws;
+cout << setw(15) << WCI;
+
+
+
+for (int j = i; j < 4; j++){
+Ws = Ws +2;
+   cout << "Temp = " << Ta << " Wind = " << Ws << " WCI = " << WCI << endl;
+*/
