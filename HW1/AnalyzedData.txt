@@ -1,0 +1,6 @@
+09.01.2020
+Total number of cases = 4.00
+Number of persons tesed = 77
+The prevalence is 5.19%
+
+If a test result is changed from a int to a char it bugs out. That is it doesn't display anything past the date which is a string so that wouldn't be affected, this is relevant if it's a blank space or a char for the test result, this isn't a bool as if you had 5 for a input it would assume 5 positive cases for one person aswell.
